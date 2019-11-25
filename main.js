@@ -1,6 +1,7 @@
 'use strict';
 
 function renderDogImage(response) {
+  $('.results').empty();
   $('.results').append(`<img src="${response.message}" class="results-img">`);
 }
 
