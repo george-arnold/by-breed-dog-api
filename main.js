@@ -2,6 +2,9 @@
 
 function renderDogImage(response) {
   $('.results').empty();
+  if (response.message === "Breed not found (master breed does not exist)") {
+ alert ('This breed does not exist in the database. Please try again.')
+  } else 
   $('.results').append(`<img src="${response.message}" class="results-img">`);
 }
 
